@@ -102,4 +102,7 @@ struct prudphdr {
 C99 is a standard for the C programming language, published by the International Organization for Standardization (ISO) in 1999. It introduced several new features and improvements to the language.
 C99 also made several changes and clarifications to the syntax and semantics of the language. The standardization of C99 helped to increase the portability and reliability of C code, as it provided a more consistent and predictable language specification for developers to follow.
 
-
+## References and useful links
+https://www.3dbrew.org/wiki/PRUDP#:~:text=PRUDP%20is%20a%20third%2Dparty,numbers%20and%20acknowledgement%20within%20UDP.
+https://github.com/kinnay/NintendoClients/wiki/PRUDP-Protocol
+https://svnweb.freebsd.org/base/stable/10/sys/netinet/udp.h?view=log
