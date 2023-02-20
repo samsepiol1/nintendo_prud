@@ -1,5 +1,5 @@
-<h2>Nitendo PRUD</h2>
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://seeklogo.com/images/N/nintendo-switch-logo-38D4F5C7E7-seeklogo.com.png" width="400" alt="Laravel Logo"></a></p>
+<center><h2>Nitendo PRUD</h2></center>
+<p align="center"><a href="https://nintendo.com" target="_blank"><img src="https://seeklogo.com/images/N/nintendo-switch-logo-38D4F5C7E7-seeklogo.com.png" width="400" alt="Laravel Logo"></a></p>
 
 ## About Laravel
 
