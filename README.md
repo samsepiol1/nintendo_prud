@@ -9,6 +9,7 @@ On the Nintendo Switch, NEX uses a WebSocket connection instead of UDP and the '
 
 ## PRUDP Session
 
+```hex
 Handshake 1   → af a1 40 00 00 00 00 00 00 00 00 00 00 00 00 97
 
 Handshake 1   ← a1 af 10 00 00 00 00 00 00 00 00 5f 22 68 ea 3a
@@ -36,6 +37,7 @@ Acknowledge   → af a1 12 00 18 78 56 34 12 02 00 00 98
 Hangup        → af a1 63 00 18 5f 22 68 ea 04 00 aa
 
 Hangup        ← a1 af 13 00 50 d4 d6 91 e8 04 00 e2
+```
 
 
 ## About udp.h
@@ -56,7 +58,10 @@ struct udphdr {
 The struct contains four fields:
 
 1. "uh_sport" is a 16-bit unsigned integer that represents the source port number of the UDP packet.
+
 2 ."uh_dport" is a 16-bit unsigned integer that represents the destination port number of the UDP packet.
+
 3. "uh_ulen" is a 16-bit unsigned integer that represents the length of the UDP packet (including the header and data).
+
 4 . "uh_sum" is a 16-bit unsigned integer that represents the checksum of the UDP packet.
 
