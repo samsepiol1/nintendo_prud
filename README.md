@@ -98,3 +98,8 @@ struct prudphdr {
 };
 ```
 
+## C99
+C99 is a standard for the C programming language, published by the International Organization for Standardization (ISO) in 1999. It introduced several new features and improvements to the language.
+C99 also made several changes and clarifications to the syntax and semantics of the language. The standardization of C99 helped to increase the portability and reliability of C code, as it provided a more consistent and predictable language specification for developers to follow.
+
+
