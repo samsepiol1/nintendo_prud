@@ -44,11 +44,11 @@ struct prudphdr {
 	uint16_t uh_dport;		/* destination port */
 	uint16_t uh_ulen;		/* pruudp length */
 	uint8_t	uh_sum;			/* prudp checksum rewrite to 8 bits */
-    uint8_t uh_type;        /* prudp type msg */
-    uint16_t uh_seq_num;    /* prudp seq number packet */
-    uint16_t uh_session_id;     /* identificador de sessão */
-    uint32_t uh_timestamp;   
-    uint16_t uh_payload_size;   /* tamanho do payload do pacote de dados */
+        uint8_t uh_type;        /* prudp type msg */
+        uint16_t uh_seq_num;    /* prudp seq number packet */
+        uint16_t uh_session_id;     /* identificador de sessão */
+        uint32_t uh_timestamp;   
+        uint16_t uh_payload_size;   /* tamanho do payload do pacote de dados */
 
 };
 
