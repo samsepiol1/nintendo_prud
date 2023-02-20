@@ -10,6 +10,42 @@ On the Nintendo Switch, NEX uses a WebSocket connection instead of UDP and the '
 
 ## About udp.h
 The "udp.h" header file in BSD systems provides definitions and structures for working with the User Datagram Protocol (UDP) at the transport layer of the Internet Protocol (IP) networking model. It defines the UDP header structure and related constants, such as the UDP port numbers and protocol numbers, as well as the function prototypes for various UDP operations, such as sending and receiving UDP datagrams. The header file also includes macros for handling byte ordering, which is important for ensuring interoperability between different computer architectures that use different byte orders.
+
 ```c
-printf("aqui vai algo");
+#ifndef _NETINET_UDP_H_
+#define	_NETINET_UDP_H_
+
+/*
+ * UDP protocol header.
+ * Per RFC 768, September, 1981.
+ */
+struct udphdr {
+	u_short	uh_sport;		/* source port */
+	u_short	uh_dport;		/* destination port */
+	u_short	uh_ulen;		/* udp length */
+	u_short	uh_sum;			/* udp checksum */
+};
+
+/* 
+ * User-settable options (used with setsockopt).
+ */
+#define	UDP_ENCAP			1
+
+/* Start of reserved space for third-party user-settable options. */
+#define	UDP_VENDOR			SO_VENDOR
+
+/*
+ * UDP Encapsulation of IPsec Packets options.
+ */
+/* Encapsulation types. */
+#define	UDP_ENCAP_ESPINUDP_NON_IKE	1 /* draft-ietf-ipsec-nat-t-ike-00/01 */
+#define	UDP_ENCAP_ESPINUDP		2 /* draft-ietf-ipsec-udp-encaps-02+ */
+
+/* Default ESP in UDP encapsulation port. */
+#define	UDP_ENCAP_ESPINUDP_PORT		500
+
+/* Maximum UDP fragment size for ESP over UDP. */
+#define	UDP_ENCAP_ESPINUDP_MAXFRAGLEN	552
+
+#endif
 ```
