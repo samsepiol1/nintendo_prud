@@ -45,7 +45,10 @@ Hangup        ← a1 af 13 00 50 d4 d6 91 e8 04 00 e2
 |------|-----------|
 | 0x0 |   Source     |
 | 0x1|   Destination |
-| Pedro| Santos    |
+| 0x2 |  Type and Flags    |
+| 0x4 |  Session ID    |
+| 0x5 |  Packet signature    |
+| 0x9 |  Sequence ID     |
 
 
 
