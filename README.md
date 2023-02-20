@@ -77,3 +77,24 @@ The struct contains four fields:
 
 4 . "uh_sum" is a 16-bit unsigned integer that represents the checksum of the UDP packet.
 
+## PRUPD Header in C
+
+This code is defining a C language structure named prudphdr, which represents the header of the PRUDP (Nintendo's Reliable Datagram Protocol) packet. The structure contains the 
+
+```c
+
+struct prudphdr {
+
+    uint16_t uh_sport;		/* source port rewrite (C 99 ) */
+    uint16_t uh_dport;		/* destination port */
+    uint16_t uh_ulen;		/* pruudp length */
+    uint8_t  uh_sum;			/* prudp checksum rewrite to 8 bits */
+    uint8_t uh_type;        /* prudp type msg */
+    uint16_t uh_seq_num;    /* prudp seq number packet */
+    uint16_t uh_session_id;     /* identificador de sessão */
+    uint32_t uh_timestamp;   
+    uint16_t uh_payload_size;   /* tamanho do payload do pacote de dados */
+
+};
+```
+
