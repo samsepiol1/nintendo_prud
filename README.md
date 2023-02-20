@@ -10,18 +10,31 @@ On the Nintendo Switch, NEX uses a WebSocket connection instead of UDP and the '
 ## PRUDP Session
 
 Handshake 1   → af a1 40 00 00 00 00 00 00 00 00 00 00 00 00 97
+
 Handshake 1   ← a1 af 10 00 00 00 00 00 00 00 00 5f 22 68 ea 3a
+
 Handshake 2   → af a1 61 00 18 5f 22 68 ea 01 00 d4 d6 91 e8 c9
+
 Handshake 2   ← a1 af 11 00 50 d4 d6 91 e8 01 00 00 00 00 00 de
+
 Send data     → af a1 62 00 18 26 b4 01 a1 02 00 00 (25 bytes of encrypted payload) ef
+
 Acknowledge   ← a1 af 12 00 50 78 56 34 12 02 00 00 d1
+
 Send data     ← a1 af 62 00 50 67 dd f9 c3 01 00 00 (255 bytes of encrypted payload) 03
+
 Acknowledge   → af a1 12 00 18 78 56 34 12 01 00 00 97
+
 Send data     → af a1 62 00 18 8d 58 91 c0 03 00 00 (21 bytes of encrypted payload) fa
+
 Acknowledge   ← a1 af 12 00 50 78 56 34 12 03 00 00 d2
+
 Send data     ← a1 af 62 00 50 a9 c5 fa 2e 02 00 00 (130 bytes of encrypted payload) 54
+
 Acknowledge   → af a1 12 00 18 78 56 34 12 02 00 00 98
+
 Hangup        → af a1 63 00 18 5f 22 68 ea 04 00 aa
+
 Hangup        ← a1 af 13 00 50 d4 d6 91 e8 04 00 e2
 
 
