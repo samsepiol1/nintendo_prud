@@ -39,6 +39,15 @@ Hangup        → af a1 63 00 18 5f 22 68 ea 04 00 aa
 Hangup        ← a1 af 13 00 50 d4 d6 91 e8 04 00 e2
 ```
 
+## PRUDP Packet Structure
+
+| Offset | Description |
+|------|-----------|
+| 0x0 |   Source     |
+| 0x1|   Destination |
+| Pedro| Santos    |
+
+
 
 ## About udp.h
 The "udp.h" header file in BSD systems provides definitions and structures for working with the User Datagram Protocol (UDP) at the transport layer of the Internet Protocol (IP) networking model. It defines the UDP header structure and related constants, such as the UDP port numbers and protocol numbers, as well as the function prototypes for various UDP operations, such as sending and receiving UDP datagrams. The header file also includes macros for handling byte ordering, which is important for ensuring interoperability between different computer architectures that use different byte orders.
